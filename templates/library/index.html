@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Library Donar Stock Record</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<style type="text/css">
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+.col-lg-6{
+  padding-left: 20%;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+{% include "library/navbar.html" %}
+
+
+
+
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<br><br>
+  
+  <div >
+    <div >
+      <center><img class="center" height="450px" src="{% static "images/p2.png" %}" ></center>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+  <b><h1 style="text-align:center" class="display-4">Welcome to Library Donar Stock Record</h1></b>
+  <p class="lead"><center>Give today for a better tomorrow.</p></center><br>
+  <hr class="my-4">
+
+  <div class="row">
+
+    <div class="col-lg-6">
+      <img src="{% static "images/Admin-icon.png" %}" width="50%" height="50%" alt=""><br><br>
+        <a class="btn btn-primary btn-lg" style="text-align:center" href="/adminclick" role="button">Admin</a>
+
+    </div>
+
+    <div class="col-lg-6">
+      <img src="{% static "images/donor.png" %}" width="50%" height="50%" alt=""><br><br>
+      <a class="btn btn-primary btn-lg" style="text-align:center" href="/studentclick" role="button">Donor</a>
+    </div>
+  </div>
+<hr class="my-4">
+
+</div>
+
+
+
+</body>
+</html>
